@@ -1,0 +1,18 @@
+n1=int(input("enter the number for sequence="))
+def fib(n): #n will be the sequence numbers required
+    a=0
+    b=1
+    if n<0: #0 sequence nothing will be printed
+        print("invalid number enter")
+    elif n==1:
+        print(a) #first number of series
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n): 
+            
+            c=a+b
+            a=b
+            b=c
+            print(c)
+fib(n1)
